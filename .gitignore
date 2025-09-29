@@ -1,0 +1,22 @@
+# LuaRocks
+/lua_modules/
+/.luarocks/
+
+# VS Code
+.vscode/
+
+# Logs, temp
+*.log
+*.tmp
+
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# logs
+/scripts/logs
+
+# md files
+PROMPT.md
+TODO.todo
+CHEATSHEET.md
