@@ -162,6 +162,7 @@ function gameplay:update(dt)
         -- Update the main game timer
         if self.mainTimer then
             self.mainTimer:update(dt)
+            self.grid:update(dt)
             if self.mainTimer:isFinished() then self:endGame() end
         end
 
@@ -251,6 +252,7 @@ function gameplay:draw()
 
     -- Draw grid
     if self.grid then self.grid:draw() end
+    self.grid:drawThemeButton()
 
     -- Draw game over overlay
     if self.isGameOver then self:drawGameOver() end
